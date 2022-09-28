@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import about from "../public/assets/about.webp"
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
           <a href="#projects"><p className="py-2 text-gray-600 underline cursor-pointer">Check out some of my latest projects.</p></a>
         </div>
         <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image className='rounded-xl' src="/../public/assets/about.webp" alt="" width='500' height='500'/>
+          <Image className='rounded-xl' src={about} alt="" width='500' height='500'/>
         </div>
       </div>
     </div>

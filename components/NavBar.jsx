@@ -108,7 +108,7 @@ export default function NavBar() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Image
-                src="/../public/assets/mylogo.png"
+                src={logo}
                 alt="/"
                 width="87"
                 height="35"

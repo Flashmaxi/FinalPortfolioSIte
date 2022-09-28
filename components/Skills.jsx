@@ -1,5 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import html from "../public/assets/skills/html.png";
+import css from "../public/assets/skills/css.png";
+import git from "../public/assets/skills/github.png";
+import js from "../public/assets/skills/js.png";
+import n from "../public/assets/skills/next.png";
+import fb from "../public/assets/skills/firebase.png";
+import r from "../public/assets/skills/react.png";
+import tw from "../public/assets/skills/tailwind.png";
 
 export default function Skills() {
   return (
@@ -14,7 +22,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/html.png"
+                  src={html}
                   alt="/"
                   width="64"
                   height="64"
@@ -29,7 +37,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/css.png"
+                  src={css}
                   alt="/"
                   width="64"
                   height="64"
@@ -44,7 +52,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/js.png"
+                  src={js}
                   alt="/"
                   width="64"
                   height="64"
@@ -59,7 +67,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/react.png"
+                  src={r}
                   alt="/"
                   width="64"
                   height="64"
@@ -74,7 +82,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/next.png"
+                  src={n}
                   alt="/"
                   width="64"
                   height="64"
@@ -89,7 +97,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/github.png"
+                  src={git}
                   alt="/"
                   width="64"
                   height="64"
@@ -104,7 +112,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/firebase.png"
+                  src={fb}
                   alt="/"
                   width="64"
                   height="64"
@@ -119,7 +127,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/tailwind.png"
+                  src={tw}
                   alt="/"
                   width="64"
                   height="64"
