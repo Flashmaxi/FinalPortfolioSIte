@@ -3,6 +3,7 @@ import { Link } from "react-scroll/modules";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import logo from '../public/assets/mylogo.png'
 
 export default function NavBar() {
   const [nav, setNav] = useState(false);
@@ -34,7 +35,7 @@ export default function NavBar() {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link to="home" spy={true} smooth={true} offset={50} duration={100}>
           <Image
-            src="/../public/assets/mylogo.png"
+            src={logo}
             alt="/"
             width="125"
             height="70"
