@@ -121,7 +121,7 @@ export default function NavBar() {
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Let's work on interesting projects!
+                Working on interesting projects!
               </p>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function NavBar() {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
-                Let's connect
+                Connect with me!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a

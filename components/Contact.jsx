@@ -49,7 +49,7 @@ export default function Contact() {
                 <p>Front-end developer</p>
                 <p className="py-4">
                   I am available for freelance opportunities and full-time
-                  positions. Contact me and let's talk
+                  positions. Contact me and discuss opportunities.
                 </p>
               </div>
               <div>

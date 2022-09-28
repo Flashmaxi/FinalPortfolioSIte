@@ -13,7 +13,7 @@ export default function About() {
             I have spent more than 10 years of my life in sales and finance.
             When I started working for tech company as a sales lead I got my
             moment of clarity and decided to pursue my dream of becoming a
-            software developer. I've always loved technology and I was missing
+            software developer. I have always loved technology and I was missing
             something just to push me in the right direction.
           </p>
           <p className="py-2 text-gray-600">
