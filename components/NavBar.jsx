@@ -4,10 +4,29 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import logo from '../public/assets/mylogo.png'
+import { useRouter } from "next/router";
 
 export default function NavBar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [linkColor, setLinkColor] = useState('#1f2937');
+  const router = useRouter();
+
+  useEffect(() => {
+    if(
+      router.asPath === '/btc' ||
+      router.asPath === '/q' ||
+      router.asPath === '/sapa' ||
+      router.asPath === '/tomin'
+    ){
+      setNavBg('transparent')
+      setLinkColor('#ecf0f3')
+    } else {
+      setNavBg('#ecf0f3')
+      setLinkColor('#1f2937')
+    }
+  }, [router])
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,6 +45,7 @@ export default function NavBar() {
 
   return (
     <div
+    style={{backgroundColor: `${navBg}`}}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -43,7 +63,7 @@ export default function NavBar() {
         </Link>
 
         <div>
-          <ul className="hidden md:flex ">
+          <ul style={{color: `${linkColor}`}} className="hidden md:flex ">
             <Link to="home" spy={true} smooth={true} offset={50} duration={100}>
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
